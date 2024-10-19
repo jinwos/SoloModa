@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_width="411dp"
+        android:layout_height="423dp"
+        android:src="@drawable/logotipo"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <LinearLayout
+        android:layout_width="372dp"
+        android:layout_height="332dp"
+        android:layout_marginBottom="4dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.686"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:layout_width="365dp"
+            android:layout_height="51dp"
+            android:onClick="onClickTiendas"
+            android:text="Ir a Tiendas Cercanas"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:backgroundTint="#FF8225"
+            android:fontFamily="sans-serif-condensed-medium"
+
+            android:textColor="@color/black"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClickRecomendado"
+            android:text="Ir a Recomendados"
+            android:fontFamily="sans-serif-condensed-medium"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="119dp"
+            android:backgroundTint="#FF8225"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClickCuenta"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="ir a TuCuenta"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="260dp"
+            android:backgroundTint="#FF8225"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
